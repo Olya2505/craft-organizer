@@ -1,4 +1,4 @@
-package com.craft_organizer.project_service;
+package com.craftorganizer.projectservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

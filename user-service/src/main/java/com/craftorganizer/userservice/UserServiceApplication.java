@@ -1,4 +1,4 @@
-package com.craft_organizer.user_service;
+package com.craftorganizer.userservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -8,7 +8,7 @@
 		<version>3.4.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.craft-organizer</groupId>
+	<groupId>com.craftorganizer</groupId>
 	<artifactId>orchestration-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>orchestration-service</name>

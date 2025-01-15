@@ -1,4 +1,4 @@
-package com.craft_organizer.orchestration_service;
+package com.craftorganizer.orchestrationservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

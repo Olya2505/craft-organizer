@@ -1,10 +1,10 @@
-package com.craft_organizer.user_service;
+package com.craftorganizer.projectservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserServiceApplicationTests {
+class ProjectServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
