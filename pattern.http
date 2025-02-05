@@ -1,0 +1,38 @@
+### Create a new pattern
+POST http://localhost:8082/api/patterns
+Content-Type: application/json
+
+{
+  "patternName": "Cozy Sweater",
+  "type": "Knitting",
+  "notes": "A warm and cozy sweater pattern",
+  "needleSizeUs": "8",
+  "needleName": "Circular Needles"
+}
+
+### Retrieve a pattern by ID
+GET http://localhost:8082/api/patterns/67a2de48288da318198c495c
+Accept: application/json
+
+### Retrieve all patterns
+GET http://localhost:8082/api/patterns
+Accept: application/json
+
+### Update an existing pattern
+PUT http://localhost:8082/api/patterns/67a2c6381d009c75e7a2c38c
+Content-Type: application/json
+
+{
+  "patternName": "Updated Cozy Sweater",
+  "type": "Knitting",
+  "notes": "f",
+  "difficulty": "Advanced",
+  "categories": "Clothing",
+  "yarnName": "Alpaca Wool",
+  "yarnPly": "",
+  "yarnWpi": "14",
+  "needleSizeUs": "9"
+}
+
+### Delete a pattern by ID
+DELETE http://localhost:8082/api/patterns/1

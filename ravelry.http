@@ -1,0 +1,10 @@
+### GET LIST OF PATTERNS
+GET http://localhost:8082/api/ravelry?query=hat&pageSize=10&page=2
+
+### GET DETAILED PATTERN DATA
+GET http://localhost:8082/api/ravelry/7
+Accept: application/json
+
+### SAVE A PATTERN
+POST http://localhost:8082/api/ravelry/1
+Content-Type: application/json

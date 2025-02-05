@@ -1,0 +1,26 @@
+### Create a project and add it to a user
+POST http://localhost:8086/orchestrator/users/67a2efab6fc3f2639c7799fe/projects
+Content-Type: application/json
+
+{
+  "name": "Name of project",
+  "type": "KNITTING",
+  "status": "IN_PROGRESS",
+  "userId": "",
+  "description": "A cozy knitted scarf project",
+  "createdAt": "2025-01-22T10:00:00Z",
+  "updatedAt": "2025-01-22T10:00:00Z",
+  "milestone": [
+    {
+      "name": "Buy yarn",
+      "deadline": "2025-02-10T00:00:00Z",
+      "completed": false
+    },
+    {
+      "name": "Finish knitting",
+      "deadline": "2025-05-01T00:00:00Z",
+      "completed": false
+    }
+  ],
+  "patterns": []
+}
