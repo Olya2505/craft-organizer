@@ -1,0 +1,73 @@
+### Create a new project
+POST http://localhost:8082/projects
+Content-Type: application/json
+
+{
+  "name": "Namhh",
+  "type": "KNITTING",
+  "status": "IN_PROGRESS",
+  "userId": "",
+  "description": "A cozy knitted scarf project",
+  "createdAt": "2025-01-22T10:00:00Z",
+  "updatedAt": "2025-01-22T10:00:00Z",
+  "milestone": [
+    {
+      "name": "Buy yarn",
+      "deadline": "2025-02-10T00:00:00Z",
+      "completed": false
+    },
+    {
+      "name": "Finish knitting",
+      "deadline": "2025-05-01T00:00:00Z",
+      "completed": false
+    }
+  ],
+  "patterns": []
+}
+
+### Retrieve a project by ID
+GET http://localhost:8082/projects/67a2aadc582cf366c088ed78
+Accept: application/json
+
+### Retrieve all projects
+GET http://localhost:8082/projects
+Accept: application/json
+
+### Update an existing project
+PUT http://localhost:8082/projects/67a2aadc582cf366c088ed78
+Content-Type: application/json
+
+{
+  "name": "Updated123 Knitted Scarf",
+  "type": "KNITTING",
+  "status": "IN_PROGRESS",
+  "userId": "12345",
+  "description": "A cozy knitted scarf project (Updated)",
+  "createdAt": "2025-02-04T12:00:00Z",
+  "updatedAt": "2025-02-06T12:00:00Z",
+  "milestone": [
+    {
+      "name": "Buy yarn",
+      "deadline": "2025-02-10T00:00:00Z",
+      "completed": true
+    },
+    {
+      "name": "Finish knitting",
+      "deadline": "2025-03-01T00:00:00Z",
+      "completed": true
+    }
+  ],
+  "patterns": []
+}
+
+### Delete a project by ID
+DELETE http://localhost:8082/projects/67a2a5250deccf4ce02ebfae
+
+### Add a pattern to a project
+POST http://localhost:8082/projects/67a2a3560a98f650888e9751/patterns/67a14b9c4dfdff05ead2059c
+Content-Type: application/json
+Accept: application/json
+
+
+
+

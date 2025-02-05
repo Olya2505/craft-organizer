@@ -1,0 +1,7 @@
+POST http://localhost:8084/users
+Content-Type: application/json
+
+{
+  "username": "user",
+  "email": "craftorganizer@inbox.lv"
+}
